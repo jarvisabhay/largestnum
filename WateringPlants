@@ -1,0 +1,15 @@
+class Solution {
+    public int wateringPlants(int[] plants, int capacity) {
+       
+        int amount=capacity;
+        int count=0;
+        //missing for loop
+            else if(amount<plants[i]){
+                count+=i;
+                amount=capacity;
+                count+=(i+1);
+                amount-=plants[i];
+            }
+        }return count;
+    }
+}
